@@ -1,5 +1,5 @@
 // Adam Flammino 11/6
-// Wraps each line with content in an input file in out.println(""); for ease of moving htm; to java servlets
+// Wraps each line with content in an input file in out.println(""); for ease of moving html to java servlets
 
 #include "stdafx.h"
 #include <string>
