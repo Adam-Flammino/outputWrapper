@@ -39,6 +39,10 @@ int main()
 					output += "\");";
 				}
 				last = in;
+				if (in == '\"')
+				{
+					output += '\\';
+				}
 				output += in;
 				if ((in == '\n' || in == '\r') && inputFile.peek() != '\n'  && inputFile.peek() != '\r') // adds line beginning if it isn't just a blank line
 				{
@@ -46,7 +50,7 @@ int main()
 				}	
 			}
 			inputFile.close();
-			output += ")\";\n";
+			output += "\");\n";
 			std::cout << "Preview file? (Y or N):\t";
 			std::cin >> ans;
 			ans = tolower(ans);
